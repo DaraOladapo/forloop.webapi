@@ -33,14 +33,14 @@ namespace forloop.webapi
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "ToDo API",
+                    Title = "Hello ForLoop API",
                     Description = "A simple example ASP.NET Core Web API",
                     TermsOfService = "None",
                     Contact = new Contact
                     {
                         Name = "Shayne Boyer",
                         Email = string.Empty,
-                        Url = "https://twitter.com/spboyer"
+                        Url = "https://twitter.com/forloopafrica"
                     },
                     License = new License
                     {
