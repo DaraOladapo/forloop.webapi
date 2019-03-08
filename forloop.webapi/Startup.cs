@@ -38,9 +38,9 @@ namespace forloop.webapi
                     TermsOfService = "None",
                     Contact = new Contact
                     {
-                        Name = "Shayne Boyer",
+                        Name = "Dara Oladapo",
                         Email = string.Empty,
-                        Url = "https://twitter.com/forloopafrica"
+                        Url = "https://twitter.com/daraoladapo"
                     },
                     License = new License
                     {
