@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\GreetingController.cs" />
+  </ItemGroup>
 </Project>
