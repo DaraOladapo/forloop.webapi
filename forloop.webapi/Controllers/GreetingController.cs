@@ -16,20 +16,20 @@ namespace forloop.webapi.Controllers
         public IActionResult GetBasicGreeting(){
             return Ok("Hello ForLoop People!");
         }
-        // [HttpGet]
-        // [Route("get-greeting-by-time")]
-        // public iActionResult GetGreetingByTime(){
-        //     string Greeting="";
-        //     if(DateTime.Now.Hour<12){
-        //        Greeting=$"Good morning, the time is {DateTime.Now.ToShortTimeString()}";
-        //     }
-        //    else if(DateTime.Now.Hour==12 || DateTime.Now.Hour<=16){
-        //         Greeting=$"Good afternoon, the time is {DateTime.Now.ToShortTimeString()}";
-        //    }
-        //    else if (DateTime.Now.Hour>16){
-        //        Greeting=$"Good evening, the time is {DateTime.Now.ToShortTimeString()}";
-        //    }
-        //     return Ok(Greeting);
-        // }
+        [HttpGet]
+        [Route("get-greeting-by-time")]
+        public iActionResult GetGreetingByTime(){
+            string Greeting="";
+            if(DateTime.Now.Hour<12){
+               Greeting=$"Good morning, the time is {DateTime.Now.ToShortTimeString()}";
+            }
+           else if(DateTime.Now.Hour==12 || DateTime.Now.Hour<=16){
+                Greeting=$"Good afternoon, the time is {DateTime.Now.ToShortTimeString()}";
+           }
+           else if (DateTime.Now.Hour>16){
+               Greeting=$"Good evening, the time is {DateTime.Now.ToShortTimeString()}";
+           }
+            return Ok(Greeting);
+        }
     }
 }
