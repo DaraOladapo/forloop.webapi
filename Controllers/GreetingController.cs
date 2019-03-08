@@ -13,12 +13,12 @@ namespace forloop.webapi.Controllers
         
         [HttpGet]
         [Route("get-basic-greeting")]
-        public ActionResult<string> GetBasicGreeting(){
+        public IActionResult GetBasicGreeting(){
             return Ok("Hello ForLoop People!");
         }
         // [HttpGet]
         // [Route("get-greeting-by-time")]
-        // public ActionResult<string> GetGreetingByTime(){
+        // public iActionResult GetGreetingByTime(){
         //     string Greeting="";
         //     if(DateTime.Now.Hour<12){
         //        Greeting=$"Good morning, the time is {DateTime.Now.ToShortTimeString()}";
