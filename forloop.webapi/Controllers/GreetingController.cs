@@ -18,7 +18,7 @@ namespace forloop.webapi.Controllers
         }
         [HttpGet]
         [Route("get-greeting-by-time")]
-        public iActionResult GetGreetingByTime(){
+        public IActionResult GetGreetingByTime(){
             string Greeting="";
             if(DateTime.Now.Hour<12){
                Greeting=$"Good morning, the time is {DateTime.Now.ToShortTimeString()}";
